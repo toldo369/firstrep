@@ -1,0 +1,28 @@
+<!--Напишіть код, який виводить всі прості числа в діапазоні від 2 до n.-->
+
+<!--Для n = 10 результат повинен бути 2,3,5,7.-->
+
+<!--P.S. Код також повинен легко модифікуватися для будь-якого числа n.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = prompt("Enter a n value to find all prime numbers", );
+
+  newPrime:
+      for (let i = 2; i <= n; i++) {
+          for (let j = 2; j < i; j++) {
+              if (i % j == 0) continue newPrime;
+          }
+          alert( i );
+      }
+</script>
+
+</body>
+</html>
