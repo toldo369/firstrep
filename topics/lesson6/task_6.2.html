@@ -1,0 +1,31 @@
+<!--Створіть функцію readNumber, яка запросить число, поки відвідувач не введе дійсне числове значення.-->
+
+<!--Отримане значення потрібно повернути як число.-->
+
+<!--Відвідувач також може зупинити процес, ввівши порожній рядок або натиснувши “CANCEL”. У цьому випадку функція повинна повернути null.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function readNumber() {
+    let num;
+
+    do {
+      num = prompt("Введіть число");
+    } while ( !isFinite(num) );
+
+    if (num === null || num === '') return null;
+
+    return +num;
+  }
+
+  alert(`${readNumber()}`);
+
+</script>
+</body>
+</html>

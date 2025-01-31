@@ -1,0 +1,29 @@
+<!--Напишіть функцію checkSpam(str), яка повертає true, якщо str містить ‘viagra’ or ‘XXX’, інакше false.-->
+
+<!--Функція має бути нечутливою до регістру-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkSpam(str) {
+      let lowerStr = str.toLowerCase();
+
+      if (lowerStr.includes('viagra') || lowerStr.includes('xxx')) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+
+  alert(checkSpam("фыаviaGraвыа"));
+
+</script>
+
+</body>
+</html>

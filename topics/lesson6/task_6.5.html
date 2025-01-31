@@ -1,0 +1,26 @@
+<!--Створіть функцію truncate(str, maxlength), яка перевіряє довжину str і, якщо вона перевищує maxlength – замінює кінець str символом трьох крапок "…", щоб його довжина була рівною maxlength.-->
+
+<!--Результатом функції повинен бути урізаний (якщо потребується) рядок.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+            str.slice(0, maxlength - 1) + '…' : str;
+  }
+
+  alert(truncate("Що я хотів би розповісти на цю тему:", 20))
+
+</script>
+
+</body>
+</html>
